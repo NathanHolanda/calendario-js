@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+body{
+    background-color: rgb(117, 117, 117);
+}
+
+.container{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 450px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+}
+
+.calendar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.date{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    background-color: rgb(107, 160, 167);
+}
+
+i{
+    cursor: pointer;
+}
+
+.date h4{
+    font-size: 2rem;
+}
+
+.date p{
+    font-size: 1rem;
+    margin: 0.2rem 0 ;
+}
+
+.weekdays{
+    display: flex;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    padding: 0.3rem;
+    background-color: cornsilk;
+    font-size: 1.5rem;
+}
+
+.weekday{
+    width: calc(100%/7);
+}
+
+.days{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    color: cornsilk;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.day{
+    width: calc(100%/7);
+    padding: 0.7rem 0;
+    border: 2px solid #000;
+}
+
+.prevOrNextDays{
+    color: rgb(51, 51, 51);
+}
+
+.day:hover{
+    border: 2px solid #fff;
+}
+
+.today{
+    background-color: rgb(107, 160, 167);
+    color: #000;
+}
